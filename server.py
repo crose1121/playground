@@ -14,7 +14,7 @@ def play():
 def num(num):
     return render_template('play_num.html', num=int(num))
 
-@app.route('/play/<num>/<color>')
+@app.route('/play/<int:num>/<string:color>')
 def num_color(num,color):
     return render_template('play_num_color.html', num=int(num), color=str(color))
 
