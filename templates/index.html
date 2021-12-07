@@ -12,5 +12,30 @@
     <div class="container">
         <h1>Welcome to the playground</h1>
     </div>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: {{color}}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="d-flex flex-wrap">
+            {% for box in range(num): %}
+            <div class="box m-3"></div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+</body>
+</html>
+
 </body>
 </html>
